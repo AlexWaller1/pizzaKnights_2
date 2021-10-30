@@ -77,4 +77,31 @@ objectToArray(troutHybrid);
 console.log("----------------------------------------");
 console.log("----------------------------------------");
 
-let nums1 = [1, 1, 2, 2, 3];
+let nums1 = [1, 2, 2, 3, 3];
+
+let nums2 = [1, 1, 2, 3, 3];
+
+let nums3 = [1, 1, 2, 2, 3];
+
+function singleAppearance(array1) {
+  array1.sort();
+  let rString = "";
+  let rString2 = "";
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] == array1[i - 1] || array1[i] == array1[i + 1]) {
+      rString = array1[i];
+    } else rString2 = array1[i];
+  }
+  console.log(rString2);
+}
+
+singleAppearance(nums1);
+// 1
+singleAppearance(nums2);
+// 2
+singleAppearance(nums3);
+// 3
+
+// singleAppearance is O(n) with linear runtime
+// the longer the array is the longer it will
+// take for function to run
