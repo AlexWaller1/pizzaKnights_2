@@ -73,3 +73,6 @@ objectToArray(troutHybrid);
 // [['name', 'Brown'],
 // ['hybridType', 'Trout Hybrid'],
 // ['yearsOld', 1]]
+
+console.log("----------------------------------------");
+console.log("----------------------------------------");

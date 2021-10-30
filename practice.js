@@ -29,3 +29,16 @@ if (nums[0] == 1) {
   }
   console.log(innerArray);
 }
+
+let nums2 = [1, 1, 2, 3, 3];
+
+if (nums2[1] == 1) {
+  let rString = "";
+  let rString2 = "";
+  for (let i = 1; i < nums2.length - 1; i++) {
+    if (nums2[i] == nums2[i - 1] || nums2[i] == nums2[i + 1]) {
+      rString = nums2[i];
+    } else rString2 = nums2[i];
+  }
+  console.log(rString2);
+}
