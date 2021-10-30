@@ -38,6 +38,12 @@ const ramHybrid = {
   yearsOld: 1
 };
 
+const troutHybrid = {
+  name: "Brown",
+  hybridType: "Trout Hybrid",
+  yearsOld: 1
+};
+
 function objectToArray(objectA) {
   let i = 0;
   let objectArray = [];
@@ -47,10 +53,23 @@ function objectToArray(objectA) {
   for (; i < Object.values(objectA).length; i++) {
     values = Object.values(objectA)[i];
     keys = Object.keys(objectA)[i];
-    objectElement = [`${keys}`, `${values}`];
+    objectElement = [keys, values];
     objectArray.push(objectElement);
   }
   console.log(objectArray);
 }
 
 objectToArray(treeHybrid);
+// [['name', 'Cornelius'],
+// ['hybridType', 'Tree Hybrid'],
+// ['yearsOld', 1]]
+
+objectToArray(ramHybrid);
+// [['name', 'Stacey'],
+// ['hybridType', 'Ram Hybrid'],
+// ['yearsOld', 1]]
+
+objectToArray(troutHybrid);
+// [['name', 'Brown'],
+// ['hybridType', 'Trout Hybrid'],
+// ['yearsOld', 1]]
