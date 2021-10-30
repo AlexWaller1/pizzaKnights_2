@@ -23,3 +23,34 @@ capitalizeFirstLetter("the pack of dachshunds ran across the field");
 // The Pack Of Dachshunds Ran Across The Field
 capitalizeFirstLetter("gumby and pokey are great friends with lowbelly.");
 // Gumby And Pokey Are Great Friends With Lowbelly.
+console.log("---------------------------------------------------------");
+console.log("----------------------------------------------------------");
+
+const treeHybrid = {
+  name: "Cornelius",
+  hybridType: "Tree Hybrid",
+  yearsOld: 1
+};
+
+const ramHybrid = {
+  name: "Stacey",
+  hybridType: "Ram Hybrid",
+  yearsOld: 1
+};
+
+function objectToArray(objectA) {
+  let i = 0;
+  let objectArray = [];
+  let values = "";
+  let keys = "";
+  let objectElement = "";
+  for (; i < Object.values(objectA).length; i++) {
+    values = Object.values(objectA)[i];
+    keys = Object.keys(objectA)[i];
+    objectElement = [`${keys}`, `${values}`];
+    objectArray.push(objectElement);
+  }
+  console.log(objectArray);
+}
+
+objectToArray(treeHybrid);
