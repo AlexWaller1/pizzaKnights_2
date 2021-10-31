@@ -83,6 +83,8 @@ let nums2 = [1, 1, 2, 3, 3];
 
 let nums3 = [1, 1, 2, 2, 3];
 
+let nums4 = [37, 23, 23, 35, 35, 16, 16];
+
 function singleAppearance(array1) {
   array1.sort();
   let rString = "";
@@ -101,7 +103,47 @@ singleAppearance(nums2);
 // 2
 singleAppearance(nums3);
 // 3
+singleAppearance(nums4);
+// 37
 
 // singleAppearance is O(n) with linear runtime
 // the longer the array is the longer it will
 // take for function to run
+
+console.log("--------------------------------------------------");
+console.log("---------------------------------------------------");
+
+const cartRacers = [
+  {
+    name: "Neo Cortex",
+    cartColor: 0
+  },
+  {
+    name: "Crash Bandicoot",
+    cartColor: 2
+  },
+  {
+    name: "Dingodile",
+    cartColor: 1
+  }
+];
+
+const colors = [2, 0, 1, 1, 0, 2, 0, 1, 0, 2, 1, 1];
+
+function sortByColor(array2) {
+  let done = false;
+  while (!done) {
+    done = true;
+    for (let i = 0; i < array2.length; i++) {
+      if (array2[i - 1] > array2[i]) {
+        done = false;
+        let arrange = array2[i - 1];
+        array2[i - 1] = array2[i];
+        array2[i] = arrange;
+      }
+    }
+  }
+  console.log(array2);
+}
+
+sortByColor(colors);
