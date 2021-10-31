@@ -159,7 +159,7 @@ if (9 > 2) {
     let sum = 0;
     let sumArray = [];
     for (let i = 0; i < money1.length; i++) {
-      let money2 = money1[1];
+      let money2 = money1[i];
       sum = sum + money2;
       sumArray.push(sum);
     }

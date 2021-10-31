@@ -147,3 +147,53 @@ function sortByColor(array2) {
 }
 
 sortByColor(colors);
+
+console.log("---------------------------------");
+console.log("----------------------------------");
+
+const bankAccounts = [
+  [1, 2, 3],
+  [3, 4, 5],
+  [5, 6, 7]
+];
+
+const bankAccounts2 = [
+  [4, 5, 6], // 15
+  [20, 37, 44], // 101
+  [23, 14, 18] // 55
+];
+
+function moneyBags(array1) {
+  let maxArray = [];
+  let max = "";
+  let newMax = "";
+  array1.forEach(function (money1) {
+    let sum = 0;
+    let sumArray = [];
+    for (let i = 0; i < money1.length; i++) {
+      let money2 = money1[i];
+      sum = sum + money2;
+      sumArray.push(sum);
+    }
+    max = sumArray[0];
+    for (let j = 0; j < sumArray.length; j++) {
+      if (sumArray[j] > max) {
+        max = sumArray[j];
+      }
+    }
+    maxArray.push(max);
+    newMax = maxArray[0];
+
+    for (let k = 0; k < maxArray.length; k++) {
+      if (maxArray[k] > newMax) {
+        newMax = maxArray[k];
+      }
+    }
+  });
+  console.log(newMax);
+}
+
+moneyBags(bankAccounts);
+// 18
+moneyBags(bankAccounts2);
+// 101
