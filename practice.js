@@ -139,3 +139,37 @@ robots[1] = robots[2];
 console.log(robots[1]);
 // Warren-21
 console.log(robots[2]);
+
+const r2 = [4, 2, 1, 3];
+r2.splice(0, 0, r2[1]);
+
+console.log(r2);
+console.log("--------------------------------");
+console.log("---------------------------------");
+
+const moneyBags = [
+  [1, 2, 3],
+  [3, 4, 5],
+  [5, 6, 7]
+];
+
+if (9 > 2) {
+  moneyBags.forEach(function (money1) {
+    console.log(money1);
+    let sum = 0;
+    let sumArray = [];
+    for (let i = 0; i < money1.length; i++) {
+      let money2 = money1[1];
+      sum = sum + money2;
+      sumArray.push(sum);
+    }
+    console.log(sumArray);
+    let max = sumArray[0];
+    for (let j = 0; j < sumArray.length; j++) {
+      if (sumArray[j] > max) {
+        max = sumArray[j];
+      }
+    }
+    console.log(max);
+  });
+}
