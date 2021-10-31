@@ -205,3 +205,27 @@ moneyBags(bankAccounts2);
 // 101
 moneyBags(bankAccounts3);
 // 75
+
+// O(n^2)
+
+console.log("--------------------------------");
+console.log("----------------------------------");
+
+let scoobyDoo = {
+  name: "Scooby Doo",
+  bestFriend: "Shaggy",
+  vehicle: "Mystery Van"
+};
+console.log(Object.keys(scoobyDoo));
+// ['name', 'best friend', 'vehicle']
+console.log(Object.values(scoobyDoo));
+// ['Scooby Doo', 'Shaggy', 'Mystery Van']
+
+function stolenItems(object, name1, value) {
+  keyValue = { [name1]: value };
+  Object.assign(object, keyValue);
+  console.log(object);
+}
+
+stolenItems({ tv: 500 }, "Scooby Doo", "priceless");
+// {tv: 500, Scooby Doo: 'priceless'}

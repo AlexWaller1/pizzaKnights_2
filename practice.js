@@ -173,3 +173,40 @@ if (9 > 2) {
     console.log(max);
   });
 }
+
+console.log("--------------------------------");
+console.log("---------------------------------");
+
+let scoobyDoo = {
+  name: "Scooby Doo",
+  bestFriend: "Shaggy",
+  vehicle: "Mystery Van"
+};
+console.log(Object.keys(scoobyDoo));
+// ['name', 'best friend', 'vehicle']
+console.log(Object.values(scoobyDoo));
+// ['Scooby Doo', 'Shaggy', 'Mystery Van']
+console.log(Object.values(scoobyDoo).length);
+// 3
+let scooby2 = Object.values(scoobyDoo).length;
+console.log(scooby2);
+Object.assign(scoobyDoo, { career: "Mystery Solver" });
+console.log(scoobyDoo);
+
+if (44 > 42) {
+  let i = 0;
+  let keys = "";
+  let values = "";
+  let newObject = {};
+  for (; i < scooby2; i++) {
+    keys = Object.keys(scoobyDoo);
+    values = Object.values(scoobyDoo);
+    newObject[keys] = values;
+  }
+  console.log(newObject);
+}
+
+let a1 = "newKey";
+let b1 = {};
+b1[a] = 20;
+console.log(b1);
