@@ -163,6 +163,12 @@ const bankAccounts2 = [
   [23, 14, 18] // 55
 ];
 
+const bankAccounts3 = [
+  [1, 2, 3, 4, 5], // 15
+  [10, 15, 50], // 75
+  [14, 14] // 28
+];
+
 function moneyBags(array1) {
   let maxArray = [];
   let max = "";
@@ -197,3 +203,5 @@ moneyBags(bankAccounts);
 // 18
 moneyBags(bankAccounts2);
 // 101
+moneyBags(bankAccounts3);
+// 75
