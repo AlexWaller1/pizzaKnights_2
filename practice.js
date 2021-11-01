@@ -425,3 +425,34 @@ console.log("n" == "n");
 // true
 console.log("e" == "f");
 // false
+
+console.log(bandicoot.indexOf("Dingodile"));
+// 3
+console.log(bandicoot[3]);
+// Dingodile
+console.log(bandicoot[1]);
+// Cortex
+
+if (bandicoot[3] == "Dingodile") {
+  let crash1 = bandicoot
+    .filter(function (crash2) {
+      return crash2 == "Dingodile";
+    })
+    .map(function (crash3) {
+      return crash3;
+    });
+  console.log(crash1);
+  // ['Dingodile']
+}
+
+if (bandicoot[1] == "Cortex") {
+  let crash1 = bandicoot
+    .filter(function (crash2) {
+      return crash2 == "Crunch Bandicoot";
+    })
+    .map(function (crash3) {
+      return crash3;
+    });
+  console.log(crash1);
+  // ['Crunch Bandicoot']
+}
