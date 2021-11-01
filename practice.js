@@ -296,6 +296,7 @@ let t2 = [25, 16];
 let t3 = [9, 2];
 let t4 = [62, 49];
 let t6 = [307, 224];
+let t7 = [33, 45, 6];
 
 function switchingValues(array2) {
   let i = 0;
@@ -320,3 +321,57 @@ switchingValues(t4);
 // [49, 62]
 switchingValues(t6);
 // [224, 307]
+switchingValues(t7);
+// [33, 6, 45]
+// this great to know but is important to know that
+// without the other code it will only make one switch
+
+// Types of Triangles
+
+// By Side
+// Equilateral - 3 equal sides, all angles are 60 degrees
+// Isosceles - 2 equal sides, 2 equal angles
+// Scalene - no equal sides, no equal angles
+
+// By Angle
+// Right - 1 angle = 90 degrees
+// Acute - all angles less than 90 degrees
+// Obtuse - 1 angle greater than 90 degrees
+
+const triangles = [
+  {
+    name: "triangle-1",
+    sideLengths: [4, 4, 9],
+    angles: [70, 70, 40]
+  },
+  {
+    name: "triangle-2",
+    sideLengths: [11, 11, 11],
+    angles: [60, 60, 60]
+  },
+  {
+    name: "triangle-3",
+    sideLengths: [12, 14, 16],
+    angles: [90, 50, 40]
+  }
+];
+
+function equilateralTester(array1) {
+  let t = 0;
+  let testTri = "";
+  let rString = "";
+  for (; t < array1.length; t++) {
+    testTri = array1[t];
+    if (
+      testTri.angles[0] == testTri.angles[1] &&
+      testTri.angles[1] == testTri.angles[2] &&
+      testTri.angles[0] == testTri.angles[2]
+    ) {
+      rString = `${testTri.name} is an Equilateral Triangle`;
+    }
+  }
+  console.log(rString);
+}
+
+equilateralTester(triangles);
+// triangle-2 is an Equilateral Triangle
