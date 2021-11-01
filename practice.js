@@ -456,3 +456,24 @@ if (bandicoot[1] == "Cortex") {
   console.log(crash1);
   // ['Crunch Bandicoot']
 }
+
+console.log(bandicoot[0].includes("Bandicoot"));
+// true
+console.log(bandicoot.indexOf("Crunch Bandicoot"));
+// 7
+console.log(bandicoot.indexOf("Rogue Trooper"));
+// -1
+
+if (bandicoot[7] == "Crunch Bandicoot") {
+  let i = 0;
+  const newBandicoot = [];
+  let crash1 = "";
+  for (; i < bandicoot.length; i++) {
+    crash1 = bandicoot[i];
+    if (crash1.includes("Bandicoot")) {
+      newBandicoot.push(crash1);
+    }
+  }
+  console.log(newBandicoot);
+  // ['Crash Bandicoot', 'Crunch Bandicoot']
+}
