@@ -595,3 +595,30 @@ if (bandicoot[1] == "Cortex") {
   console.log(reverse2);
   // [73, 76, 12, 54, 719]
 }
+
+console.log(bandicoot[2]);
+// Spyro
+console.log(bandicoot[3]);
+// Dingodile
+
+const numsDuplicate = [1, 1, 37, 44, 44, 45, 75, 75, 76];
+
+const rogueDuplicate = [
+  "Rogue Trooper",
+  "Rogue Trooper",
+  "Gunnar",
+  "Helm",
+  "Helm",
+  "Bagman",
+  "Bagman"
+];
+
+function removeDuplicates(array) {
+  let array2 = [...new Set(array)];
+  console.log(array2);
+}
+
+removeDuplicates(numsDuplicate);
+// [1, 37, 44, 45, 75, 76]
+removeDuplicates(rogueDuplicate);
+// ['Rogue Trooper', 'Gunnar', 'Helm', 'Bagman']
