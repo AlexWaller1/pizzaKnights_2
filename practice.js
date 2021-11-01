@@ -573,3 +573,25 @@ console.log(rogueTrooper.friends[1]);
 // Helm
 console.log(rogueTrooper.friends[2]);
 // Bagman
+
+const reverseNums = [37, 67, 21, 45, 917];
+let crash2 = "bandicoot";
+// crarsh2 = crash2.reverse();
+console.log(crash2);
+
+if (bandicoot[1] == "Cortex") {
+  let i = 0;
+  const reverse2 = [];
+  for (; i < reverseNums.length; i++) {
+    let reverse = reverseNums[i];
+    reverse = reverse.toString();
+    reverse = reverse.split("");
+    reverse = reverse.reverse();
+    reverse = reverse.join("");
+    reverse = parseInt(reverse);
+    console.log(reverse);
+    reverse2.push(reverse);
+  }
+  console.log(reverse2);
+  // [73, 76, 12, 54, 719]
+}
