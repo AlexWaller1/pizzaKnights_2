@@ -414,3 +414,14 @@ trapezoidArea(trapezoids);
 // The area of trapezoid-1 is 32.5
 // The area of trapezoid-2 is 230
 // The area of trapezoid-3 is 550
+
+console.log("a" < "b");
+// true
+console.log("z" > "v");
+// true
+console.log("m" > "q");
+// false
+console.log("n" == "n");
+// true
+console.log("e" == "f");
+// false
