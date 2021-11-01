@@ -559,3 +559,17 @@ rank: 'Genetic Infantryman', planet: 'Nu Earth',
 adversary: 'The Norts'}
 
 */
+
+keyValue2("combatZone", "The Quartz Zone", rogueTrooper);
+// {combatZone: "The Quartz Zone"} added to rogueTrooper
+keyValue2("friends", ["Gunnar", "Helm", "Bagman"], rogueTrooper);
+// friends: (3) ['Gunnar', 'Helm', 'Bagman']
+
+console.log(rogueTrooper.friends);
+// ['Gunnar', 'Helm', 'Bagman']
+console.log(rogueTrooper.friends[0]);
+// Gunnar
+console.log(rogueTrooper.friends[1]);
+// Helm
+console.log(rogueTrooper.friends[2]);
+// Bagman
