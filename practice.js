@@ -210,3 +210,83 @@ let a1 = "newKey";
 let b1 = {};
 b1[a] = 20;
 console.log(b1);
+
+const crashBandicoot = {
+  name: "Crash Bandicoot",
+  species: "Bandicoot",
+  favoriteThing: "Cart Racing"
+};
+
+console.log(crashBandicoot);
+
+function addKeyValue(key, value, object) {
+  let newPair = { [key]: value };
+  Object.assign(object, newPair);
+  console.log(object);
+}
+
+addKeyValue("rival", "Cortex", crashBandicoot);
+// added new key value pair to crashBandicoot
+
+const roboClones = [
+  "Hank-44",
+  "Mellon-Tech",
+  "Warren-21",
+  "Warren-21",
+  "Mellon-Tech",
+  "Eggplant-Head",
+  "Hank-44"
+];
+
+console.log(roboClones[1]);
+// Mellon-Tech
+const bandicoot = [
+  "Crash Bandicoot",
+  "Cortex",
+  "Spyro",
+  "Dingodile",
+  "Shifty",
+  "N. Ginn",
+  "Tiny Tiger",
+  "Crunch Bandicoot"
+];
+
+console.log(bandicoot);
+
+if (bandicoot[1] == "Cortex") {
+  let i = 0;
+  for (; i < bandicoot.length; i++) {
+    if (i <= 4) {
+      console.log(`${bandicoot[i]} is an awesome
+          character`);
+      // Crash Bandicoot is an awesome character
+      // Cortex is an awesome character
+      // Spyro is an awesome character
+      // Dingodile is an awesome character
+      // Shifty is an awesome character
+    }
+  }
+}
+
+console.log(bandicoot[3]);
+// Dingodile
+
+if (bandicoot[3] == "Dingodile") {
+  let a2 = 3;
+  let b2 = 5;
+  let c2 = "";
+
+  c2 = a2;
+  // remember assignment happens with variable on the
+  // left and value on the right
+  console.log(c2);
+  // 3
+  console.log(a2);
+  // 3
+  a2 = b2;
+  console.log(a2);
+  // 5
+  b2 = c2;
+  console.log(b2);
+  // 3
+}

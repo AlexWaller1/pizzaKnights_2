@@ -229,3 +229,6 @@ function stolenItems(object, name1, value) {
 
 stolenItems({ tv: 500 }, "Scooby Doo", "priceless");
 // {tv: 500, Scooby Doo: 'priceless'}
+stolenItems({ tv: 600, stapler: 700 }, "play station", 1000);
+// {tv: 600, stapler: 700, play station: 1000}
+stolenItems({ scanner: 650, candy: 25 }, "fryingPan", 125);
