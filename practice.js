@@ -379,20 +379,38 @@ equilateralTester(triangles);
 const trapezoids = [
   {
     name: "trapezoid-1",
-    aBase = 4,
-    bBase = 9,
-    height = 5
+    aBase: 4,
+    bBase: 9,
+    height: 5
   },
   {
-      name: 'trapezoid-2',
-      aBase = 12,
-      bBase = 34,
-      height = 10
+    name: "trapezoid-2",
+    aBase: 12,
+    bBase: 34,
+    height: 10
   },
   {
-      name: 'trapezoid-3',
-      aBase: 20,
-      bBase: 30,
-      height: 22
+    name: "trapezoid-3",
+    aBase: 20,
+    bBase: 30,
+    height: 22
   }
 ];
+
+function trapezoidArea(array1) {
+  let i = 0;
+  let trapezoid = "";
+  let area = 0;
+
+  for (; i < array1.length; i++) {
+    trapezoid = array1[i];
+    area = ((trapezoid.aBase + trapezoid.bBase) / 2) * trapezoid.height;
+    console.log(`The area of ${trapezoid.name} 
+        is ${area}`);
+  }
+}
+
+trapezoidArea(trapezoids);
+// The area of trapezoid-1 is 32.5
+// The area of trapezoid-2 is 230
+// The area of trapezoid-3 is 550
