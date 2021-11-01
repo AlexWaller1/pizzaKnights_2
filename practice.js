@@ -369,9 +369,30 @@ function equilateralTester(array1) {
     ) {
       rString = `${testTri.name} is an Equilateral Triangle`;
     }
+    console.log(rString);
   }
-  console.log(rString);
 }
 
 equilateralTester(triangles);
 // triangle-2 is an Equilateral Triangle
+
+const trapezoids = [
+  {
+    name: "trapezoid-1",
+    aBase = 4,
+    bBase = 9,
+    height = 5
+  },
+  {
+      name: 'trapezoid-2',
+      aBase = 12,
+      bBase = 34,
+      height = 10
+  },
+  {
+      name: 'trapezoid-3',
+      aBase: 20,
+      bBase: 30,
+      height: 22
+  }
+];
