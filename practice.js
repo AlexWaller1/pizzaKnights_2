@@ -520,3 +520,42 @@ console.log(test4);
 test4.splice(1, 0, 2);
 console.log(test4);
 // [1, 2, 3, 4, 5]
+test4.splice(test4.length, 0, 6);
+console.log(test4);
+// [1, 2, 3, 4, 5, 6]
+
+console.log(bandicoot[4]);
+// Shifty
+console.log(bandicoot[4 + 1]);
+// N. Ginn
+
+const rogueTrooper = {
+  name: "Rogue Trooper",
+  army: "The Southers",
+  rank: "Genetic Infantryman"
+};
+
+let rogueTrooper2 = {
+  planet: "Nu Earth"
+};
+
+Object.assign(rogueTrooper, rogueTrooper2);
+// adds key-value pair to object
+
+console.log(rogueTrooper);
+
+function keyValue2(key, value, object) {
+  let newPair = { [key]: value };
+  Object.assign(object, newPair);
+  console.log(object);
+}
+
+keyValue2("adversary", "The Norts", rogueTrooper);
+
+/* 
+
+{name: 'Rogue Trooper', army: 'The Southers', 
+rank: 'Genetic Infantryman', planet: 'Nu Earth', 
+adversary: 'The Norts'}
+
+*/
