@@ -290,3 +290,33 @@ if (bandicoot[3] == "Dingodile") {
   console.log(b2);
   // 3
 }
+
+let t1 = [37, 44];
+let t2 = [25, 16];
+let t3 = [9, 2];
+let t4 = [62, 49];
+let t6 = [307, 224];
+
+function switchingValues(array2) {
+  let i = 0;
+  let temporary = 0;
+  for (; i < array2.length; i++) {
+    if (array2[i] > array2[i + 1]) {
+      temporary = array2[i];
+      array2[i] = array2[i + 1];
+      array2[i + 1] = temporary;
+    }
+  }
+  console.log(array2);
+}
+
+switchingValues(t1);
+// [37, 44]
+switchingValues(t2);
+// [16, 25]
+switchingValues(t3);
+// [2, 9]
+switchingValues(t4);
+// [49, 62]
+switchingValues(t6);
+// [224, 307]
