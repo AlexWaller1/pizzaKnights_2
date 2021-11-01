@@ -477,3 +477,46 @@ if (bandicoot[7] == "Crunch Bandicoot") {
   console.log(newBandicoot);
   // ['Crash Bandicoot', 'Crunch Bandicoot']
 }
+
+const zeroOne = [1, 2, 0, 3, 0, 9];
+
+if (bandicoot[0] == "Crash Bandicoot") {
+  let i = 0;
+  let min = zeroOne[0];
+  for (; i < zeroOne.length; i++) {
+    if (zeroOne[i] < min) {
+      min = zeroOne[i];
+    }
+  }
+  console.log(min);
+  // 0
+}
+
+if (bandicoot[1] == "Cortex") {
+  let i = 0;
+  let min = zeroOne[0];
+  let newZero = [];
+  let index = zeroOne.indexOf(min);
+  let z1 = "";
+  for (; i < zeroOne.length; i++) {
+    z1 = zeroOne[i];
+    if (z1 < min) {
+      min = z1;
+    }
+    while (zeroOne.length != 0) {
+      newZero.push(min);
+      zeroOne.splice(index, 1);
+    }
+  }
+  console.log(newZero);
+  console.log(zeroOne);
+  console.log(min);
+}
+
+const test4 = [1, 2, 3, 4, 5];
+test4.splice(1, 1);
+console.log(test4);
+// [1, 3, 4, 5]
+test4.splice(1, 0, 2);
+console.log(test4);
+// [1, 2, 3, 4, 5]
