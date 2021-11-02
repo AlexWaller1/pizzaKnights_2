@@ -650,6 +650,21 @@ if (bandicoot[1] == "Cortex") {
   // [8, 6, 4, 2]
 }
 
+console.log(bandicoot[2]);
+// Spyro
+
+if (bandicoot[2] == "Spyro") {
+  let i = 0;
+  let noDuplicates = [];
+  while (i < numsDuplicate.length) {
+    if (numsDuplicate[i] != numsDuplicate[i + 1]) {
+      noDuplicates.push(numsDuplicate[i]);
+    }
+    i++;
+  }
+  console.log(noDuplicates);
+}
+
 function removeDuplicates2(array1) {
   array1.sort();
   let i = 0;
