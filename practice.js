@@ -793,6 +793,8 @@ const replicas2 = [12, 12, 25, 25, 24];
 
 const replicas3 = [3, 9, 3, 12, 4, 12];
 
+const replicas4 = [34, 22, 23, 22, 34, 12, 12, 9];
+
 removeDuplicates3(replicas1);
 // [2, 4, 6]
 
@@ -801,3 +803,17 @@ removeDuplicates3(replicas2);
 
 removeDuplicates3(replicas3);
 // [12, 3, 4, 9]
+
+removeDuplicates3(replicas4);
+// [12, 22, 23, 34, 9]
+
+console.log(replicas4.sort());
+
+const replicas5 = [34, 22, 23, 22, 34, 12, 12, 9];
+console.log(replicas5.sort());
+// [12, 12, 22, 22, 23, 34, 34, 9]
+// not sure why 9 is not sorted
+
+const letters1 = ["a", "z", "r", "f", "g", "b", "v"];
+console.log(letters1.sort());
+// ['a', 'b', 'f', 'g', 'r', 'v', 'z']
