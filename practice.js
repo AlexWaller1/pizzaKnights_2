@@ -759,3 +759,45 @@ commonSubstring(robots);
 
 commonSubstring(bandicoot);
 // No Common Substring
+
+const duplicates = [1, 1, 2, 2, 3, 3, 4, 4];
+
+if (bandicoot[3] == "Dingodile") {
+  let i = 0;
+  for (; i < duplicates.length; i++) {
+    if (duplicates[i] == duplicates[i - 1]) {
+      duplicates.splice(i, 1);
+    }
+  }
+  console.log(duplicates);
+  // [1, 2, 3, 4]
+}
+
+console.log("-------------------------");
+console.log(numsDuplicate);
+
+function removeDuplicates3(array) {
+  array.sort();
+  let i = 0;
+  for (; i < array.length; i++) {
+    if (array[i] == array[i - 1]) {
+      array.splice(i, 1);
+    }
+  }
+  console.log(array);
+}
+
+const replicas1 = [2, 2, 4, 4, 6, 6];
+
+const replicas2 = [12, 12, 25, 25, 24];
+
+const replicas3 = [3, 9, 3, 12, 4, 12];
+
+removeDuplicates3(replicas1);
+// [2, 4, 6]
+
+removeDuplicates3(replicas2);
+// [12, 24, 25]
+
+removeDuplicates3(replicas3);
+// [12, 3, 4, 9]
