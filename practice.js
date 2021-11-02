@@ -689,3 +689,45 @@ removeDuplicates2(roboClones);
 
 console.log("Hammerhead" < "Wibaux");
 // true
+let unSort = [37, 55, 23, 11];
+
+console.log(bandicoot[6]);
+// Tiny Tiger
+if (bandicoot[6] == "Tiny Tiger") {
+  let i = 0;
+  let temp = 0;
+  while (i < unSort.length) {
+    if (unSort[i] > unSort[i + 1]) {
+      temp = unSort[i];
+      unSort[i] = unSort[i + 1];
+      unSort[i + 1] = temp;
+    }
+    i++;
+  }
+  console.log(unSort);
+}
+
+console.log(bandicoot[5]);
+// N. Ginn
+
+console.log(bandicoot[4]);
+// Shifty
+
+console.log(bandicoot[3]);
+// Dingodile
+
+console.log(parseInt("7-"));
+// 7
+
+const timberTron = ["Timber-Tron", "Io_Timber", "Tim"];
+
+if (timberTron[0] == "Timber-Tron") {
+  let commonString = timberTron[0];
+  let i = 1;
+  for (; i < timberTron.length; i++) {
+    while (!timberTron[i].includes(commonString)) {
+      commonString = commonString.substring(0, commonString.length - 1);
+    }
+  }
+  console.log(commonString);
+}
