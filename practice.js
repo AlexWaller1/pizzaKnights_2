@@ -624,3 +624,33 @@ removeDuplicates(rogueDuplicate);
 // ['Rogue Trooper', 'Gunnar', 'Helm', 'Bagman']
 console.log(numsDuplicate);
 // [1, 1, 37, 44, 44, 45, 75, 75, 76]
+console.log(rogueDuplicate);
+
+if (bandicoot[0] == "Crash Bandicoot") {
+  let i = 9;
+  let countDown = [];
+  while (i > 0) {
+    countDown.push(i);
+    i--;
+  }
+  console.log(countDown);
+  // [9, 8, 7, 6, 5, 4, 3, 2, 1]
+}
+
+if (bandicoot[1] == "Cortex") {
+  let i = 9;
+  let countDown = [];
+  while (i > 0) {
+    if (i % 2 == 0) {
+      countDown.push(i);
+    }
+    i--;
+  }
+  console.log(countDown);
+  // [8, 6, 4, 2]
+}
+
+function removeDuplicates2(array1) {
+  array1.sort();
+  let i = 0;
+}
