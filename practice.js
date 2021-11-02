@@ -622,3 +622,5 @@ removeDuplicates(numsDuplicate);
 // [1, 37, 44, 45, 75, 76]
 removeDuplicates(rogueDuplicate);
 // ['Rogue Trooper', 'Gunnar', 'Helm', 'Bagman']
+console.log(numsDuplicate);
+// [1, 1, 37, 44, 44, 45, 75, 75, 76]
