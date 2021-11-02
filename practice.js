@@ -730,4 +730,32 @@ if (timberTron[0] == "Timber-Tron") {
     }
   }
   console.log(commonString);
+  // Tim
 }
+
+function commonSubstring(array1) {
+  if (array1.length < 2) console.log("Not Enough Elements");
+  let commonStr = array1[0];
+  let i = 1;
+  for (; i < array1.length; i++) {
+    while (!array1[i].includes(commonStr)) {
+      commonStr = commonStr.substring(0, commonStr.length - 1);
+      if (commonStr.length == 0) console.log("No Common Substring");
+    }
+  }
+  console.log(commonStr);
+}
+
+commonSubstring(timberTron);
+// Tim
+
+const emptyArray = [];
+
+commonSubstring(emptyArray);
+// Not Enough Elements
+
+commonSubstring(robots);
+// No Common Substring
+
+commonSubstring(bandicoot);
+// No Common Substring
