@@ -668,4 +668,24 @@ if (bandicoot[2] == "Spyro") {
 function removeDuplicates2(array1) {
   array1.sort();
   let i = 0;
+  let noDuplicates = [];
+  while (i < array1.length) {
+    if (array1[i] != array1[i + 1]) {
+      noDuplicates.push(array1[i]);
+    }
+    i++;
+  }
+  console.log(noDuplicates);
 }
+
+removeDuplicates2(numsDuplicate);
+// [1, 37, 44, 45, 75, 76]
+
+removeDuplicates2(rogueDuplicate);
+// ['Bagman', 'Gunnar', 'Helm', 'Rogue Trooper']
+
+removeDuplicates2(roboClones);
+// ['Eggplant-Head', 'Hank-44', 'Mellon-Tech', 'Warren-21']
+
+console.log("Hammerhead" < "Wibaux");
+// true
